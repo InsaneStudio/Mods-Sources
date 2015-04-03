@@ -1,0 +1,18 @@
+package com.heaven.item;
+
+public class HeavenLightier {
+
+	public static void mainRegistry()
+	{
+		initializeItem();
+		registerItem();
+	}
+	public static void initializeItem()
+	{
+		
+	}
+	public static void registerItem()
+	{
+		
+	}
+}

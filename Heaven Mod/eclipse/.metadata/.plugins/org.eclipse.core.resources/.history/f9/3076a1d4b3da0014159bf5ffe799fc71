@@ -1,0 +1,24 @@
+package com.heaven.Main;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class CraftingMenager {
+
+	public static void mainRegistry()
+	{
+		addCraftingRecipe();
+		addSmeltingRecipe();
+	}
+	
+	public static void addCraftingRecipe()
+	{
+		//Shaped
+		GameRegistry.addRecipe(new ItemStack(), params);;
+		
+	}
+	
+	public static void addSmeltingRecipe()
+	{
+		
+	}
+}

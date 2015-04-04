@@ -1,0 +1,20 @@
+package com.heaven.Main;
+
+public class CraftingMenager {
+
+	public static void mainRegistry()
+	{
+		addCraftingRecipe();
+		addSmeltingRecipe();
+	}
+	
+	public static void addCraftingRecipe()
+	{
+		
+	}
+	
+	public static void addSmeltingRecipe()
+	{
+		
+	}
+}

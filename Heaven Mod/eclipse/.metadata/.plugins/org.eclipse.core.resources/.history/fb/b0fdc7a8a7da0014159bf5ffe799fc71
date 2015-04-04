@@ -1,0 +1,26 @@
+package com.heaven.item;
+
+import com.heaven.lib.RefStrings;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class ItemHandler {
+
+	public static void mainRegistry()
+	{
+		initializeItem();
+		registerItem();
+	}
+	public static Item heavenLghtier;
+	
+	public static void initializeItem()
+	{
+		heavenLghtier = new Item().setUnlocalizedName("heavenLighter").setCreativeTab(CreativeTabs.tabMisc).setTextureName(RefStrings.MODID + ":heavenLighter");
+	}
+	public static void registerItem()
+	{
+		GameRegistry.registerItem(heavenLghtier, heavenLghtier.getUnlocalizedName());
+	}
+}

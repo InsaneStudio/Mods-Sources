@@ -1,0 +1,19 @@
+package com.heaven.blocks.ores;
+
+import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class OreHandeler {
+
+	public static IWorldGenerator SkyStoneGen;
+	
+	public static void registerOre()
+	{
+		GameRegistry.registerWorldGenerator(SkyStoneGen, 1);
+	}
+	
+	public static void defineOre()
+	{
+		SkyStoneGen = new SkyStoneGenerator();
+	}
+}

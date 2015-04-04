@@ -1,0 +1,27 @@
+package com.heaven.Main;
+
+import com.heaven.blocks.BlockHandler;
+
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class CraftingMenager {
+
+	public static void mainRegistry()
+	{
+		addCraftingRecipe();
+		addSmeltingRecipe();
+	}
+	
+	public static void addCraftingRecipe()
+	{
+		//Shaped
+		GameRegistry.addRecipe(new ItemStack(BlockHandler.SkyStone), new Object[]{"XXX","XXX","XXX", 'X', ItemHandler.skyDust});;
+		
+	}
+	
+	public static void addSmeltingRecipe()
+	{
+		
+	}
+}

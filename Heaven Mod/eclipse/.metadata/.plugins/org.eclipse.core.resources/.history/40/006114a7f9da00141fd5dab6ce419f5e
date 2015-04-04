@@ -1,0 +1,18 @@
+package assets.heaven.dimension;
+
+import net.minecraft.world.WorldProvider;
+
+public class WorldProviderHeaven extends WorldProvider {
+
+	public void registerWorldChunkManager()
+	{
+		
+	}
+	
+	@Override
+	public String getDimensionName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

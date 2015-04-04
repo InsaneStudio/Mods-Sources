@@ -2,13 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+		<item value="ChunkProviderHeaven" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ChunkProviderTutorial"/>
+			<item value="getBlockId"/>
+			<item value="Tutorial.portalTutorialBlock.blockID"/>
+			<item value="Block.sandStone.blockID"/>
+			<item value="BlockHandler.HeavemPortal"/>
 		</list>
 		<list key="replacehistory">
+			<item value="ChunkProviderHeaven"/>
+			<item value="getBlock"/>
+			<item value="BlockHandler.HeavenPortal"/>
+			<item value="BlockHandler.SkyStone"/>
+			<item value="BlockHandler.HeavemPortal"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

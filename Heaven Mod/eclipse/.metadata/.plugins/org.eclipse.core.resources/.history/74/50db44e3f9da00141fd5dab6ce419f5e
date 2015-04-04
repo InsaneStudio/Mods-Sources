@@ -1,0 +1,21 @@
+package assets.heaven.dimension;
+
+import assets.heavenmod.biome.BiomeRegistry;
+import net.minecraft.world.WorldProvider;
+import net.minecraft.world.biome.WorldChunkManagerHell;
+
+public class WorldProviderHeaven extends WorldProvider {
+
+	public void registerWorldChunkManager()
+	{
+		this.worldChunkMgr = new WorldChunkManagerHell(BiomeRegistry.biomeHeaven, 0.21F);
+		this.dimensionId = dimensionRegistry.dimensionID;
+	}
+	
+	@Override
+	public String getDimensionName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

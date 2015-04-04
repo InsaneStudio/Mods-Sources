@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.world.World"/>
-<fullyQualifiedTypeName name="net.minecraft.world.chunk.IChunkProvider"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.IWorldGenerator"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenerator"/>
@@ -19,10 +17,32 @@
 <fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayer"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.layer.IntCache"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerBiome"/>
-<fullyQualifiedTypeName name="assets.heavenmod.biome.BiomeRegistry"/>
 <fullyQualifiedTypeName name="assets.heavenmod.biome.WorldTypeHeaven"/>
 <fullyQualifiedTypeName name="net.minecraft.world.WorldType"/>
 <fullyQualifiedTypeName name="com.heaven.blocks.BlockHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityBat"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.DimensionManager"/>
+<fullyQualifiedTypeName name="net.minecraft.world.WorldProvider"/>
+<fullyQualifiedTypeName name="assets.heavenmod.biome.BiomeRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.world.biome.WorldChunkManagerHell"/>
+<fullyQualifiedTypeName name="net.minecraft.world.chunk.IChunkProvider"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockPortal"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.util.AxisAlignedBB"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayerMP"/>
+<fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
+<fullyQualifiedTypeName name="assets.heaven.dimension.dimensionRegistry"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.world.ChunkCoordIntPair"/>
+<fullyQualifiedTypeName name="net.minecraft.util.LongHashMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ibm.icu.util.BytesTrie.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="net.minecraft.util.Direction"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.terraingen.InitNoiseGensEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.NoiseGenerator"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 </qualifiedTypeNameHistroy>

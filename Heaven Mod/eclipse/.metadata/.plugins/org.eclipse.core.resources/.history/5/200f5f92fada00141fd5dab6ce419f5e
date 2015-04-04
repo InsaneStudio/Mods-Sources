@@ -1,0 +1,13 @@
+package com.heaven.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockPortal;
+
+public class HeavenPortal extends BlockPortal {
+
+	public SapphirePortal()
+	{
+		super();
+	}
+	public void updateTick(World world, int z, int y, int z, Random random)
+}

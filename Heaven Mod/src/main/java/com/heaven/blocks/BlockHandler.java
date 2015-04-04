@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 public class BlockHandler {
 
 	public static Block SkyStone;
+	public static Block HeavenPortal;
 	
 	public static void mainRegistry()
 	{
@@ -22,9 +23,11 @@ public class BlockHandler {
 	public static void initializeBlock()
 	{
 		SkyStone = new SkyStone(Material.rock).setBlockName("SkyStone").setCreativeTab(CreativeTabsHandler.heavenBlocks).setBlockTextureName(RefStrings.MODID + ":SkyStone");
+		HeavenPortal = new HeavenPortal().setCreativeTab(CreativeTabsHandler.heavenBlocks);
 	}
 	public static void registerBlock()
 	{
-		GameRegistry.registerBlock(SkyStone, SkyStone.getUnlocalizedName());
+		GameRegistry.registerBlock(SkyStone, "SkyStone");
+		GameRegistry.registerBlock(HeavenPortal, "HeavenBlock");
 	}
 }

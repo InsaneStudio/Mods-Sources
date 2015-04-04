@@ -1,0 +1,10 @@
+package assets.heavenmod.biome;
+
+import net.minecraft.world.biome.BiomeGenBase;
+
+public class BiomeGenHeaven extends BiomeGenBase {
+
+	public BiomeGenHeaven(int id) {
+		super(id);
+	}
+}

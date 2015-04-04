@@ -1,5 +1,6 @@
 package com.heaven.blocks;
 
+import com.heaven.creativetabs.CreativeTabsHandler;
 import com.heaven.lib.RefStrings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -20,7 +21,7 @@ public class BlockHandler {
 	
 	public static void initializeBlock()
 	{
-		SkyStone = new SkyStone(Material.rock).setBlockName("SkyStone").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(RefStrings.MODID + ":SkyStone");
+		SkyStone = new SkyStone(Material.rock).setBlockName("SkyStone").setCreativeTab(CreativeTabsHandler.heavenBlocks).setBlockTextureName(RefStrings.MODID + ":SkyStone");
 	}
 	public static void registerBlock()
 	{

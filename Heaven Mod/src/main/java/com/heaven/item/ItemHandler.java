@@ -1,5 +1,6 @@
 package com.heaven.item;
 
+import com.heaven.creativetabs.CreativeTabsHandler;
 import com.heaven.lib.RefStrings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -18,8 +19,8 @@ public class ItemHandler {
 	
 	public static void initializeItem()
 	{
-		heavenLghtier = new Item().setUnlocalizedName("heavenLighter").setCreativeTab(CreativeTabs.tabMisc).setTextureName(RefStrings.MODID + ":heavenLighter");
-		skyDust = new Item().setUnlocalizedName("skyDust").setCreativeTab(CreativeTabs.tabMisc).setTextureName(RefStrings.MODID + ":skyDust");
+		heavenLghtier = new Item().setUnlocalizedName("heavenLighter").setCreativeTab(CreativeTabsHandler.heavenItems).setTextureName(RefStrings.MODID + ":heavenLighter");
+		skyDust = new Item().setUnlocalizedName("skyDust").setCreativeTab(CreativeTabsHandler.heavenItems).setTextureName(RefStrings.MODID + ":skyDust");
 	}
 	public static void registerItem()
 	{

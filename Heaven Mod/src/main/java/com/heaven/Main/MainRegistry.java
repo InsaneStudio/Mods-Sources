@@ -1,7 +1,12 @@
 package com.heaven.Main;
 
+import net.minecraft.world.WorldType;
+import assets.heavenmod.biome.BiomeRegistry;
+import assets.heavenmod.biome.WorldTypeHeaven;
+
 import com.heaven.blocks.BlockHandler;
 import com.heaven.blocks.ores.OreHandler;
+import com.heaven.creativetabs.CreativeTabsHandler;
 import com.heaven.item.ItemHandler;
 import com.heaven.lib.RefStrings;
 
@@ -23,10 +28,12 @@ public class MainRegistry {
 	@EventHandler
 	public static void PreLoad(FMLPreInitializationEvent PreEvent)
 	{
+		CreativeTabsHandler.mainRegistry();
 		ItemHandler.mainRegistry();
 		BlockHandler.mainRegistry();
 		OreHandler.mainRegistry();
 		CraftingMenager.mainRegistry();
+		BiomeRegistry.mainRegistry();
 		proxy.registerRenderInfo();
 	}
 	@EventHandler
@@ -37,6 +44,6 @@ public class MainRegistry {
 	@EventHandler
 	public static void PostLoad(FMLPostInitializationEvent PreEvent)
 	{
-		
+		WorldType HEAVEN = new WorldTypeHeaven(3, "heaven");
 	}
 }

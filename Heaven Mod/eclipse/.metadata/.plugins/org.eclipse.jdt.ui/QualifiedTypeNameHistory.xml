@@ -5,10 +5,24 @@
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.IWorldGenerator"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenerator"/>
-<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
-<fullyQualifiedTypeName name="com.heaven.blocks.BlockHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
 <fullyQualifiedTypeName name="com.heaven.item.ItemHandler"/>
+<fullyQualifiedTypeName name="com.heaven.creativetabs.CreativeTabsHandler"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary.Type"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeManager"/>
+<fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenBase"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerBiomeEdge"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayer"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.IntCache"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerBiome"/>
+<fullyQualifiedTypeName name="assets.heavenmod.biome.BiomeRegistry"/>
+<fullyQualifiedTypeName name="assets.heavenmod.biome.WorldTypeHeaven"/>
+<fullyQualifiedTypeName name="net.minecraft.world.WorldType"/>
+<fullyQualifiedTypeName name="com.heaven.blocks.BlockHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityBat"/>
 </qualifiedTypeNameHistroy>

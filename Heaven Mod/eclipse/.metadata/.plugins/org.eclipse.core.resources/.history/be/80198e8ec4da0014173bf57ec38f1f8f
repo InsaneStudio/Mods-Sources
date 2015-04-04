@@ -1,0 +1,25 @@
+package assets.heavenmod.biome;
+
+import com.heaven.blocks.BlockHandler;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.world.biome.BiomeGenBase;
+
+public class BiomeGenHeaven extends BiomeGenBase {
+
+	public BiomeGenHeaven(int id) {
+		super(id);
+		
+		this.spawnableCaveCreatureList.add(new SpawnListEntry());
+		
+		this.theBiomeDecorator.treesPerChunk = 2;
+		this.theBiomeDecorator.grassPerChunk = 3;
+		
+		this.topBlock = Blocks.grass;
+		this.fillerBlock = BlockHandler.SkyStone;
+		
+		this.biomeName = "Heaven";
+
+		
+	}
+}

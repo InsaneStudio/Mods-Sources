@@ -15,6 +15,7 @@ public class SkyStone extends Block
 		super(p_i45394_1_);
 		setHarvestLevel("pickaxe", 1);
 		setHardness(0.75F);
+		setStepSound(soundTypeGlass);
 	}
 	
 	public int quantityDropped(Random rand)

@@ -12,7 +12,8 @@ import net.minecraft.item.Item;
 public class BlockHandler {
 
 	public static Block SkyStone;
-	public static Block HeavenPortal;
+	public static HeavenPortal HeavenPortal;
+	public static HeavenFire HeavenFire;
 	
 	public static void mainRegistry()
 	{
@@ -23,11 +24,13 @@ public class BlockHandler {
 	public static void initializeBlock()
 	{
 		SkyStone = new SkyStone(Material.rock).setBlockName("SkyStone").setCreativeTab(CreativeTabsHandler.heavenBlocks).setBlockTextureName(RefStrings.MODID + ":SkyStone");
-		HeavenPortal = new HeavenPortal().setCreativeTab(CreativeTabsHandler.heavenBlocks);
+		HeavenPortal = new HeavenPortal("HeavenPortal");
+		HeavenFire = new HeavenFire("HeavenFire");
 	}
 	public static void registerBlock()
 	{
 		GameRegistry.registerBlock(SkyStone, "SkyStone");
-		GameRegistry.registerBlock(HeavenPortal, "HeavenBlock");
+		GameRegistry.registerBlock(HeavenPortal, "HeavenPortal");
+		GameRegistry.registerBlock(HeavenFire, "HeavenFire");
 	}
 }

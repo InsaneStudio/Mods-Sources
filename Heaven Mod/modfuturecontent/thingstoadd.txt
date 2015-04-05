@@ -1,0 +1,7 @@
+We need to add:
+- a lighter working, spawning a heaven fire
+- more blocks
+- more items
+- add a portal texture
+- new biomes for new world
+- new trees

@@ -1,7 +1,0 @@
-package assets.heaven.dimension;
-
-import net.minecraft.world.gen.MapGenBase;
-
-public class MapGenRavineHeaven extends MapGenBase {
-
-}

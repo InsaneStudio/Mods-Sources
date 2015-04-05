@@ -1,6 +1,7 @@
 item.heavenLighter.name=Heaven Lighter
 item.skyDust.name=Sky Dust
 tile.SkyStone.name=Sky Stone
+tile.HeavenPortal.name=Heaven Portal
 itemGroup.heavenBlocks=Heaven Blocks
 itemGroup.heavenItems=Heaven Items
 generator.heaven=Heaven World

@@ -1,7 +1,0 @@
-package com.heaven.blocks;
-
-import net.minecraft.block.Block;
-
-public class HeavenPortal extends Block {
-
-}

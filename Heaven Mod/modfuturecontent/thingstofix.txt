@@ -1,0 +1,2 @@
+We need to fix:
+- portal and fire textures

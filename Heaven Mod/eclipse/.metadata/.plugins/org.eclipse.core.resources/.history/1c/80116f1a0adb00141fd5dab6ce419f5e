@@ -1,7 +1,0 @@
-package com.heaven.blocks;
-
-import net.minecraft.world.Teleporter;
-
-public class TeleporterHeaven extends Teleporter {
-
-}

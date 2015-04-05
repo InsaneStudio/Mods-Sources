@@ -1,43 +1,60 @@
-[00:21:35] [main/INFO]: Setting user: Player844
-[00:21:36] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:21:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heaven Mod
-[00:21:40] [Sound Library Loader/INFO]: Sound engine started
-[00:21:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[00:21:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[00:21:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heaven Mod
-[00:21:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[00:21:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[00:21:43] [Sound Library Loader/INFO]: Sound engine started
-[00:21:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:21:52] [Server thread/INFO]: Generating keypair
-[00:21:53] [Server thread/INFO]: Preparing start region for level 0
-[00:21:53] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:21:53] [Server thread/INFO]: Player844[local:E:f12d7586] logged in with entity id 15 at (18.77504785739266, 64.0, 9857.363144439436)
-[00:21:53] [Server thread/INFO]: Player844 joined the game
-[00:21:58] [Server thread/ERROR]: Encountered an unexpected exception
-net.minecraft.util.ReportedException: Colliding entity with block
-	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:198) ~[NetworkSystem.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:726) ~[MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614) ~[MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752) [MinecraftServer$2.class:?]
-Caused by: java.lang.NullPointerException
-	at net.minecraft.world.Teleporter.<init>(Teleporter.java:32) ~[Teleporter.class:?]
-	at com.heaven.blocks.TeleporterHeaven.<init>(TeleporterHeaven.java:35) ~[TeleporterHeaven.class:?]
-	at com.heaven.blocks.HeavenPortal.onEntityCollidedWithBlock(HeavenPortal.java:107) ~[HeavenPortal.class:?]
-	at net.minecraft.entity.Entity.func_145775_I(Entity.java:962) ~[Entity.class:?]
-	at net.minecraft.entity.Entity.moveEntity(Entity.java:895) ~[Entity.class:?]
-	at net.minecraft.network.NetHandlerPlayServer.processPlayer(NetHandlerPlayServer.java:367) ~[NetHandlerPlayServer.class:?]
-	at net.minecraft.network.play.client.C03PacketPlayer.processPacket(C03PacketPlayer.java:37) ~[C03PacketPlayer.class:?]
-	at net.minecraft.network.play.client.C03PacketPlayer$C04PacketPlayerPosition.processPacket(C03PacketPlayer.java:163) ~[C03PacketPlayer$C04PacketPlayerPosition.class:?]
-	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:241) ~[NetworkManager.class:?]
-	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:182) ~[NetworkSystem.class:?]
-	... 5 more
-[00:21:58] [Server thread/ERROR]: This crash report has been saved to: D:\Maciek\Java\Modding\eclipse\.\crash-reports\crash-2015-04-05_00.21.58-server.txt
-[00:21:58] [Server thread/INFO]: Stopping server
-[00:21:58] [Server thread/INFO]: Saving players
-[00:21:58] [Server thread/INFO]: Saving worlds
-[00:21:58] [Server thread/INFO]: Saving chunks for level 'WoW!'/Overworld
-[00:21:58] [Server thread/INFO]: Saving chunks for level 'WoW!'/Nether
-[00:21:58] [Server thread/INFO]: Saving chunks for level 'WoW!'/The End
+[13:40:33] [main/INFO]: Setting user: Player748
+[13:40:34] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:40:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heaven Mod
+[13:40:38] [Sound Library Loader/INFO]: Sound engine started
+[13:40:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:40:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:40:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heaven Mod
+[13:40:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:40:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:40:40] [Sound Library Loader/INFO]: Sound engine started
+[13:40:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[13:40:49] [Server thread/INFO]: Generating keypair
+[13:40:50] [Server thread/INFO]: Preparing start region for level 0
+[13:40:50] [Server thread/INFO]: Changing view distance to 12, from 10
+[13:40:51] [Server thread/INFO]: Player748[local:E:bb283205] logged in with entity id 264 at (-201.29031208472827, 64.08918122877671, 246.73412596037082)
+[13:40:51] [Server thread/INFO]: Player748 joined the game
+[13:41:02] [Server thread/INFO]: Player748 has just earned the achievement [Taking Inventory]
+[13:41:02] [Client thread/INFO]: [CHAT] Player748 has just earned the achievement [Taking Inventory]
+[13:41:37] [Server thread/INFO]: Saving and pausing game...
+[13:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:41:37] [Server thread/INFO]: Saving chunks for level 'New World'/Heaven
+[13:41:42] [Server thread/INFO]: Stopping server
+[13:41:42] [Server thread/INFO]: Saving players
+[13:41:42] [Server thread/INFO]: Saving worlds
+[13:41:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:41:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:41:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:41:42] [Server thread/INFO]: Saving chunks for level 'New World'/Heaven
+[15:10:36] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:10:36] [Server thread/INFO]: Generating keypair
+[15:10:36] [Server thread/INFO]: Preparing start region for level 0
+[15:10:37] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:10:37] [Server thread/INFO]: Player748[local:E:5181eb29] logged in with entity id 2929 at (-191.57969593794883, 63.0, 249.58103397679295)
+[15:10:37] [Server thread/INFO]: Player748 joined the game
+[15:10:43] [Server thread/INFO]: Saving and pausing game...
+[15:10:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:10:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:10:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:10:43] [Server thread/INFO]: Saving chunks for level 'New World'/Heaven
+[15:10:46] [Server thread/INFO]: Saving and pausing game...
+[15:10:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:10:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:10:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:10:46] [Server thread/INFO]: Saving chunks for level 'New World'/Heaven
+[15:11:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 166 ms
+[15:11:35] [Server thread/INFO]: Saving and pausing game...
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/Heaven
+[15:11:35] [Server thread/INFO]: Stopping server
+[15:11:35] [Server thread/INFO]: Saving players
+[15:11:35] [Server thread/INFO]: Saving worlds
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[15:11:35] [Server thread/INFO]: Saving chunks for level 'New World'/Heaven
+[15:11:37] [Client thread/INFO]: Stopping!

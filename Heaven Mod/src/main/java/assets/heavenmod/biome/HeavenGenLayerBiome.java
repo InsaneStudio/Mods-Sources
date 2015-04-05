@@ -43,14 +43,12 @@ public class HeavenGenLayerBiome extends GenLayerBiome
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.swampland, 10));
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.plains, 10));
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.taiga, 10));
-            biomes[desertIdx].add(new BiomeEntry(BiomeRegistry.biomeHeaven, 100));
         }
         else
         {
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.desert, 30));
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.savanna, 20));
             biomes[desertIdx].add(new BiomeEntry(BiomeGenBase.plains, 10));
-            biomes[desertIdx].add(new BiomeEntry(BiomeRegistry.biomeHeaven, 100));
         }
     }
 

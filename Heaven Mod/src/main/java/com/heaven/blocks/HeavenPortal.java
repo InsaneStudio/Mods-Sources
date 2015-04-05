@@ -13,21 +13,22 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 
 public class HeavenPortal extends BlockPortal {
-
+	
 	public HeavenPortal()
 	{
 		super();
 	}
-	//public void updateTick(World world, int x, int y, int z, Random random)
-	//{
-	//	
-	//}
+	@Override
+	public void updateTick(World world, int x, int y, int z, Random random)
+	{
 	
+	}
+	@Override	
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
 	{
 		return null;
 	}
-	
+	@Override	
 	public boolean renderAsNormalBlock()
 	{
 		return false;
@@ -82,12 +83,12 @@ public class HeavenPortal extends BlockPortal {
 			}
 		}
 	}
-	
+	@Override
 	public int quantityDropped(Random rand)
 	{
 		return 0;
 	}
-	
+	@Override
 	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
 	{
 		if(entity.ridingEntity == null && entity.riddenByEntity == null && entity instanceof EntityPlayerMP)
@@ -114,7 +115,7 @@ public class HeavenPortal extends BlockPortal {
 			}
 		}
 	}
-	
+
 	public boolean tryToCreatePortal(World world, int x, int y, int z)
 	{
 		byte b0 = 0;

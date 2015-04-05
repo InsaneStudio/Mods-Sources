@@ -332,7 +332,7 @@ public class TeleporterHeaven extends Teleporter
                                         j4 = k2 + l3;
                                         int l4 = j2 + (i4 - 1) * k3 - j3 * l2;
  
-                                        if (l3 < 0 && !this.worldServerInstance.getBlock(k4, j4, l4).getMaterial() || l3 >= 0 && !this.worldServerInstance.isAirBlock(k4, j4, l4))
+                                        if (l3 < 0 && !this.worldServerInstance.getBlock(k4, j4, l4).getMaterial().isSolid() || l3 >= 0 && !this.worldServerInstance.isAirBlock(k4, j4, l4))
                                         {
                                             continue label274;
                                         }
@@ -390,7 +390,7 @@ public class TeleporterHeaven extends Teleporter
                                         k4 = k2 + i4;
                                         j4 = j2 + (j3 - 1) * k3;
  
-                                        if (i4 < 0 && !this.worldServerInstance.getBlock(l3, k4, j4).getMaterial() || i4 >= 0 && !this.worldServerInstance.isAirBlock(l3, k4, j4))
+                                        if (i4 < 0 && !this.worldServerInstance.getBlock(l3, k4, j4).getMaterial().isSolid() || i4 >= 0 && !this.worldServerInstance.isAirBlock(l3, k4, j4))
                                         {
                                             continue label222;
                                         }

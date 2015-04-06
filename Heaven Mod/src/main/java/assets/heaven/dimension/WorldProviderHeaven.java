@@ -1,8 +1,11 @@
 package assets.heaven.dimension;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import assets.heavenmod.biome.BiomeGenHeaven;
 import assets.heavenmod.biome.BiomeRegistry;
 import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.Vec3;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.Chunk;
@@ -39,12 +42,31 @@ public class WorldProviderHeaven extends WorldProvider
 	{
 		return true;
 	}
-
+	
+	@Override
+	public boolean isSurfaceWorld()
+	{
+		return false;
+	}
+	
+	
 	@Override
 	public IChunkProvider createChunkGenerator()
 	{
 		return new ChunkProviderHeaven(worldObj, worldObj.getSeed(), true);
 	}
+	
+    @SideOnly(Side.CLIENT)
+    public float getCloudHeight()
+    {
+        return -1.0F;
+    }
+    
+    @SideOnly(Side.CLIENT)
+    public Vec3 getFogColor(float p_76562_1_, float p_76562_2_)
+    {
+        return Vec3.createVectorHelper(0.10000000298023224D, 0.019999999329447746D, 0.029999999329447746D);
+    }
 
 	@Override
 	public String getDimensionName()

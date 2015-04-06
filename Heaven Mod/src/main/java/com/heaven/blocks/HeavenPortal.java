@@ -37,12 +37,11 @@ public class HeavenPortal extends BlockBreakable
 		public static final int[][] field_150001_a = new int[][] {new int[0], {3, 1}, {2, 0}};
 		private static final String __OBFID = "CL_00000284";
 
-		public HeavenPortal(String name)
+		public HeavenPortal()
 		{
-			super("tutorial:" + name, Material.portal, false);
+			super(RefStrings.MODID + ":HeavenPortal", Material.glass, false);
 			this.setTickRandomly(true);
-			this.setBlockName(name);
-			this.setBlockTextureName("tutorial:" + name);
+			this.setBlockTextureName(RefStrings.MODID + ":HeavenPortal");
 			this.setCreativeTab(CreativeTabs.tabBlock);
 		}
 

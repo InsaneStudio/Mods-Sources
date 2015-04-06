@@ -363,14 +363,11 @@ public class HeavenFire extends BlockFire
      * Called whenever the block is added into the world. Args: world, x, y, z
      */
     public void onBlockAdded(World world, int x, int y, int z){
-        if (world.provider.dimensionId > 0 || !BlockHandler.HeavenPortal.getPortalSize(world, x, y, z)){
+        if (!BlockHandler.HeavenPortal.getPortalSize(world, x, y, z)){
             if (!World.doesBlockHaveSolidTopSurface(world, x, y - 1, z) && !this.canNeighborBurn(world, x, y, z)){
                 world.setBlockToAir(x, y, z);
             } else {
-                if(world.provider.dimensionId != 0){
                     world.scheduleBlockUpdate(x, y, z, this, this.tickRate(world) + world.rand.nextInt(10));
-                }
-                world.scheduleBlockUpdate(x, y, z, this, this.tickRate(world) + world.rand.nextInt(10));
             }
         }
     }

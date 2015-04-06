@@ -24,7 +24,7 @@ public class BlockHandler {
 	public static void initializeBlock()
 	{
 		SkyStone = new SkyStone(Material.rock).setBlockName("SkyStone").setCreativeTab(CreativeTabsHandler.heavenBlocks).setBlockTextureName(RefStrings.MODID + ":SkyStone");
-		HeavenPortal = new HeavenPortal("HeavenPortal");
+		HeavenPortal = new HeavenPortal();
 		HeavenFire = new HeavenFire("HeavenFire");
 	}
 	public static void registerBlock()

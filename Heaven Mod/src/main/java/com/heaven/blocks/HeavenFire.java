@@ -15,7 +15,6 @@ import net.minecraft.block.BlockPortal;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFire;
 import net.minecraft.block.material.MapColor;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -24,10 +23,8 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
-import assets.heaven.dimension.dimensionRegistry;
 
 import com.google.common.collect.Maps;
-import com.heaven.creativetabs.CreativeTabsHandler;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -42,15 +39,17 @@ public class HeavenFire extends BlockFire
     private IIcon[] field_149850_M;
     private static final String __OBFID = "CL_00000245";
 
-    protected HeavenFire(String string) {
+    protected HeavenFire(String name)
+    {
         super();
-        this.setTickRandomly(true);;
+        this.setTickRandomly(true);
+        this.setBlockName(name);
+        this.setBlockTextureName("tutorial:" + name);
         this.setLightLevel(1.0F);
-        this.disableStats();
-        this.setCreativeTab(CreativeTabsHandler.heavenBlocks);
-	}
+        this.setCreativeTab(CreativeTabs.tabBlock);
+    }
 
-	public static void func_149843_e()
+    public static void func_149843_e()
     {
         ((BlockFire) BlockHandler.HeavenFire).func_149842_a(getIdFromBlock(Blocks.planks), 5, 20);
         ((BlockFire) BlockHandler.HeavenFire).func_149842_a(getIdFromBlock(Blocks.double_wooden_slab), 5, 20);
@@ -363,22 +362,17 @@ public class HeavenFire extends BlockFire
     /**
      * Called whenever the block is added into the world. Args: world, x, y, z
      */
-    public void onBlockAdded(World p_149726_1_, int p_149726_2_, int p_149726_3_, int p_149726_4_)
-    {
-    	if(p_149726_1_.provider.dimensionId == 0 || p_149726_1_.provider.dimensionId == dimensionRegistry.dimensionID)
-    	{
-    		if (BlockHandler.HeavenPortal.getPortalSize(p_149726_1_, p_149726_2_, p_149726_3_, p_149726_4_))
-        	{
-        		if (!World.doesBlockHaveSolidTopSurface(p_149726_1_, p_149726_2_, p_149726_3_ - 1, p_149726_4_) && !this.canNeighborBurn(p_149726_1_, p_149726_2_, p_149726_3_, p_149726_4_))
-            	{
-            		p_149726_1_.setBlockToAir(p_149726_2_, p_149726_3_, p_149726_4_);
-            	}
-            	else
-            	{
-            		p_149726_1_.scheduleBlockUpdate(p_149726_2_, p_149726_3_, p_149726_4_, this, this.tickRate(p_149726_1_) + p_149726_1_.rand.nextInt(10));
-            	}
-        	}
-    	}
+    public void onBlockAdded(World world, int x, int y, int z){
+        if (world.provider.dimensionId > 0 || !BlockHandler.HeavenPortal.getPortalSize(world, x, y, z)){
+            if (!World.doesBlockHaveSolidTopSurface(world, x, y - 1, z) && !this.canNeighborBurn(world, x, y, z)){
+                world.setBlockToAir(x, y, z);
+            } else {
+                if(world.provider.dimensionId != 0){
+                    world.scheduleBlockUpdate(x, y, z, this, this.tickRate(world) + world.rand.nextInt(10));
+                }
+                world.scheduleBlockUpdate(x, y, z, this, this.tickRate(world) + world.rand.nextInt(10));
+            }
+        }
     }
 
     /**

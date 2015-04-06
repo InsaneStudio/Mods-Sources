@@ -19,7 +19,7 @@ public class ItemHandler {
 	
 	public static void initializeItem()
 	{
-		heavenLghtier = new Item().setUnlocalizedName("heavenLighter").setCreativeTab(CreativeTabsHandler.heavenItems).setTextureName(RefStrings.MODID + ":heavenLighter");
+		heavenLghtier = new HeavenLighter().setCreativeTab(CreativeTabsHandler.heavenItems).setTextureName(RefStrings.MODID + ":heavenLighter");
 		skyDust = new Item().setUnlocalizedName("skyDust").setCreativeTab(CreativeTabsHandler.heavenItems).setTextureName(RefStrings.MODID + ":skyDust");
 	}
 	public static void registerItem()

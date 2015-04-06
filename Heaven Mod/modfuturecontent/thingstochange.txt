@@ -1,3 +1,4 @@
 We need to change:
+- change dimension generation options
 - change heaven biome decorations
 - change biome generation options

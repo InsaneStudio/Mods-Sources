@@ -1,2 +1,3 @@
 We need to fix:
 - portal and fire textures
+- fire is unbreakable for player

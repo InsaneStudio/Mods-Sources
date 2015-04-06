@@ -39,10 +39,10 @@ public class HeavenPortal extends BlockBreakable
 
 		public HeavenPortal(String name)
 		{
-			super("tutorial:" + name, Material.portal, false);
+			super(RefStrings.MODID + ":" + name, Material.portal, false);
 			this.setTickRandomly(true);
 			this.setBlockName(name);
-			this.setBlockTextureName("tutorial:" + name);
+			this.setBlockTextureName(RefStrings.MODID + ":"+ name);
 			this.setCreativeTab(CreativeTabs.tabBlock);
 		}
 
